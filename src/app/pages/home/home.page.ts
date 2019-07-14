@@ -1,6 +1,6 @@
 import { Component, ViewChild, AfterContentInit, HostListener } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { NotBoringHelloSceneService } from './../services/not-boring-hello-scene.service';
+import { NotBoringHelloSceneService } from '../../services/not-boring-hello-scene.service';
 
 @Component({
   selector: 'app-home',
