@@ -1,9 +1,3 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>game</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+    <phaser-component [gameConfig]="gameConfig" (gameReady)="onGameReady($event)"></phaser-component>
 </ion-content>

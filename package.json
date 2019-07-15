@@ -25,6 +25,8 @@
     "@ionic-native/status-bar": "^5.0.0",
     "@ionic/angular": "^4.1.0",
     "cordova-android": "^8.0.0",
+    "cordova-ios": "^5.0.1",
+    "cordova-plugin-exit": "git+https://github.com/cakuki/cordova-plugin-exit.git",
     "core-js": "^2.5.4",
     "phaser": "^3.18.1",
     "phaser-component-library": "^2.0.0",
@@ -75,10 +77,12 @@
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-exit": {}
     },
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ]
   }
 }

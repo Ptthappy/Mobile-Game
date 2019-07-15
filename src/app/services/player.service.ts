@@ -5,5 +5,15 @@ import { Injectable } from '@angular/core';
 })
 export class PlayerService {
 
-  constructor() { }
+  constructor(private hp: number,
+              private maxDashes: number,
+              private dashes: number,
+              private score: number) { }
+
+  init() {
+    this.hp = 9;
+    this.maxDashes = 1;
+    this.dashes = 1;
+    this.score = 0;
+  }
 }

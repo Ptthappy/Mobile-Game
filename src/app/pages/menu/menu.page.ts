@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigateService } from '../../services/navigate.service';
+// import { exit } from 'cordova-plugin-exit';
 
 @Component({
   selector: 'app-menu',
@@ -8,11 +9,11 @@ import { Router } from '@angular/router';
 })
 export class MenuPage implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private navigator: NavigateService) { }
 
-  navigate(route: string) {
-    this.router.navigate([route]);
-  }
+  // exit() {
+  //   exit();
+  // }
 
   ngOnInit() {
   }

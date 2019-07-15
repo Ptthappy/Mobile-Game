@@ -14,7 +14,7 @@ export class NotBoringHelloSceneService extends Phaser.Scene {
   }
 
   public preload() {
-    this.load.spritesheet('dude', 'assets/dude.png', { frameWidth: 32, frameHeight: 48 });
+    this.load.spritesheet('dude', 'assets/rogue.png', { frameWidth: 400, frameHeight: 400 });
     this.sceneWidthHalf = window.innerWidth / 2;
   }
 
