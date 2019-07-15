@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'VT323-Regular';
+	font-style: cursive;
+	src: url('../../../assets/VT323-Regular.ttf');
+}
+
+.menuBtn {
+    border: none;
+    margin-top: 6vh;
+    font-family: 'VT323-Regular';
+    font-size: 33px;
+    --box-shadow: none;
+    --ripple-color: transparent;
+}
+
+.label {
+    font-family: 'VT323-Regular';
+    font-size: 22px;
+    margin-left: 2vh;
+}

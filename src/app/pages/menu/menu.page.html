@@ -1,9 +1,24 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>menu</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content color='dark'>
+  <ion-img src='../assets/demontower.png'></ion-img>
+  <ion-text class='label'>part iv - slaughter of the blood thief</ion-text>
+  <ion-button 
+    expand='full' color='transparent' 
+    class='menuBtn' size='large' 
+    style='margin-top: 10vh' (click)="navigate('game')">
+    Begin
+  </ion-button>
 
-<ion-content>
+  <ion-button 
+    expand='full' color='transparent'
+    class='menuBtn' size='large'
+    (click)="navigate('login')">
+    Login
+  </ion-button>
 
+  <ion-button 
+    expand='full' color='transparent' 
+    class='menuBtn' size='large'
+    (click)="navigate('scores')">
+    Scoreboard
+  </ion-button>
 </ion-content>
