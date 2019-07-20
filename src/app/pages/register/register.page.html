@@ -1,9 +1,28 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>register</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content color="dark" style="text-align: center">
+  <ion-label id="title">Register</ion-label>
+  <ion-card id="containerCard">
+    <ion-item color="dark">
+      <ion-label position="floating" class="cardLabel">Username</ion-label>
+      <ion-input class='cardInput' [(ngModel)]='user'></ion-input>
+    </ion-item>
 
-<ion-content>
+    <ion-item color="dark">
+      <ion-label position="floating" class="cardLabel">Email</ion-label>
+      <ion-input class='cardInput' [(ngModel)]='email'></ion-input>
+    </ion-item>
 
+    <ion-item color="dark">
+      <ion-label position="floating" class="cardLabel">Password</ion-label>
+      <ion-input type="password" class='cardInput' [(ngModel)]='pass'></ion-input>
+    </ion-item>
+
+    <ion-item color="dark">
+      <ion-label position="floating" class="cardLabel">Confirm Password</ion-label>
+      <ion-input type="password" class='cardInput' [(ngModel)]='pass2'></ion-input>
+    </ion-item>
+
+    <ion-button id="inBtn" class='btn' color='dark' (click)="register()">Confirm</ion-button>
+  </ion-card>
+
+  <ion-button id="outBtn" class="btn" color="dark" (click)="navigator.navigate('login')">Return</ion-button>
 </ion-content>

@@ -1,9 +1,19 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content color='dark' style="text-align: center">
+  <ion-label id="title">Login</ion-label>
+  <ion-card id="containerCard">
+    <ion-item color='dark'>
+      <ion-label position="floating" class="cardLabel">Username</ion-label>
+      <ion-input class='cardInput' [(ngModel)]='user'></ion-input>
+    </ion-item>
 
-<ion-content>
+    <ion-item color='dark'>
+        <ion-label position="floating" class="cardLabel">Password</ion-label>
+        <ion-input type="password" class='cardInput' [(ngModel)]='pass'></ion-input>
+    </ion-item>
 
+    <ion-button id="inBtn" class='btn' color='dark' (click)="login()">Login</ion-button>
+  </ion-card>
+  <ion-label class="cardLabel">Don't have account? <a (click)="navigator.navigate('register')">Register</a></ion-label>
+
+  <ion-button id="outBtn" class='btn' color='dark' (click)="navigator.navigate('menu')">Return</ion-button>
 </ion-content>

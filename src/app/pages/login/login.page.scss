@@ -1,0 +1,52 @@
+@font-face {
+	font-family: 'VT323-Regular';
+	font-style: cursive;
+	src: url('../../../assets/VT323-Regular.ttf');
+}
+
+#containerCard {
+    /*border: 1.2px solid #e0e0e0;*/
+    border-radius: 10px;
+    margin-left: 4vh;
+    margin-right: 4vh;
+    margin-top: 8vh;
+    height: 40vh;
+    text-align: center;
+    --box-shadow: none;
+}
+
+.cardLabel {
+    font-family: 'VT323-Regular';
+    font-size: 25px;
+    color: white;
+    padding: 5px;
+}
+
+.btn {
+    border: none;
+    font-family: 'VT323-Regular';
+    font-size: 25px;
+    margin-left: auto;
+    display: inline-block;
+    --box-shadow: none;
+}
+
+#inBtn {
+    margin-top: 12vh;
+}
+
+#outBtn {
+    margin-top: 16vh;
+}
+
+.cardInput {
+    font-family: 'VT323-Regular';
+    font-size: 20px;
+}
+
+#title {
+    font-family: 'VT323-Regular';
+    font-size: 55px;
+    margin-top: 10vh;
+    display: inline-block;
+}
